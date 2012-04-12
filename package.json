@@ -1,0 +1,15 @@
+{
+    "name": "strider-mongodb-test"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "mongoskin": ">=0.3.5"
+  }
+  , "devDependencies": {
+      "mocha": ">=0.11.0"
+    , "should": ">=0.5.1"
+  }
+  , "scripts": {
+      "test": "mocha -R tap"
+  }
+}
