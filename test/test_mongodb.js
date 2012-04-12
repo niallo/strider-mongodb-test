@@ -14,6 +14,7 @@ describe("MongoDB", function() {
     db.collection('mongo-test').insert({key:key, value:value}, function(err) {
       db.collection('mongo-test').findOne({key:key}, function(err, doc) {
         doc.value.should.eql(value);
+        done();
       });
     });
   });
